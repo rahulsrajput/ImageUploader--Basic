@@ -2,4 +2,4 @@
 
 - changed database sqlite to postgres(railway.app)
 
--
+- added cloudinary in settings.py file for uploading media file

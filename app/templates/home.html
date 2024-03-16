@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}Rahul{% endblock %}
+
+{% block content %}
+<h2 class="page-description text-center">Image Gallery</h2>
+
+<div class="tz-gallery">
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4 mt-4">
+            <a class="lightbox" href="{% static 'image/django.jpg' %}">
+                <img src="{% static 'image/django.jpg' %}" alt="Park">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 mt-4">
+            <a class="lightbox" href="{% static 'image/django.jpg' %}">
+                <img src="{% static 'image/django.jpg' %}" alt="Park">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 mt-4">
+            <a class="lightbox" href="{% static 'image/django.jpg' %}">
+                <img src="{% static 'image/django.jpg' %}" alt="Park">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 mt-4">
+            <a class="lightbox" href="{% static 'image/django.jpg' %}">
+                <img src="{% static 'image/django.jpg' %}" alt="Park">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+{% endblock %}

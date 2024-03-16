@@ -8,26 +8,13 @@
 <div class="tz-gallery">
 
     <div class="row">
+        {% for i in all_obj %}
         <div class="col-sm-6 col-md-4 mt-4">
-            <a class="lightbox" href="{% static 'image/django.jpg' %}">
-                <img src="{% static 'image/django.jpg' %}" alt="Park">
+            <a class="lightbox" href="{{ i.image.url }}" target="_blank">
+                <img src="{{i.image.url}}" alt="Park">
             </a>
         </div>
-        <div class="col-sm-6 col-md-4 mt-4">
-            <a class="lightbox" href="{% static 'image/django.jpg' %}">
-                <img src="{% static 'image/django.jpg' %}" alt="Park">
-            </a>
-        </div>
-        <div class="col-sm-6 col-md-4 mt-4">
-            <a class="lightbox" href="{% static 'image/django.jpg' %}">
-                <img src="{% static 'image/django.jpg' %}" alt="Park">
-            </a>
-        </div>
-        <div class="col-sm-6 col-md-4 mt-4">
-            <a class="lightbox" href="{% static 'image/django.jpg' %}">
-                <img src="{% static 'image/django.jpg' %}" alt="Park">
-            </a>
-        </div>
+        {% endfor %}
     </div>
 </div>
 

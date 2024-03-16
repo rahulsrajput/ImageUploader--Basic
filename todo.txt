@@ -1,3 +1,5 @@
 - Virtual environmnent
 
-- 
+- changed database sqlite to postgres(railway.app)
+
+-

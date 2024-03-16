@@ -5,3 +5,7 @@
 - added cloudinary in settings.py file for uploading media file
 
 - ImageUploader Model created
+
+- setup home view
+
+- used {{i.image.url}} to render images and open image
